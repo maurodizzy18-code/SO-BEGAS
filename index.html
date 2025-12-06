@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SO BEGA</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: sans-serif;
+      background: url('fundo.pngp.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+    header {
+      background: rgba(0,0,0,0.7);
+      text-align: center;
+      padding: 50px 20px;
+      animation: fade 2s ease-in;
+    }
+    @keyframes fade {
+      from {opacity: 0; transform: translateY(-20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    header h1 { font-size: 3em; }
+    header p { font-size: 1.2em; }
+
+    nav {
+      background: rgba(255, 87, 34, 0.9);
+      text-align: center;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+}
+
+    .produtos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px 20px;
+      background: rgba(0,0,0,0.6);
+    }
+    .produto {
+      background: rgba(255,255,255,0.1);
+      padding: 15px;
+      border-radius: 10px;
+      width: 260px;
+      text-align: center;
+      backdrop-filter: blur(5px);
+    }
+    .produto img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .preco { color: #ffc107; font-weight: bold; margin: 10px 0; }
+    .btn {
+      background: #ff5722;
+      border: none;
+      padding: 10px;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .form-container {
+      background: rgba(0,0,0,0.7);
+      padding: 30px;
+      margin: 40px auto;
+      width: 300px;
+      border-radius: 10px;
+      text-align: center;
+    }
+    .form-container input {
+      width: 90%;
+      margin: 10px 0;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    footer {
+      background: rgba(196, 46, 46, 0.8);
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+
+  <h1> SO BEGAS</h1>
+<p>BEM-VINDO AO NOSSO SITE! A MELHOR HAMBURGUERIA DO LOBITO.</p>
+</header>
+
+<nav>
+  <a href="#cardapio">Cardápio</a>
+  <a href="#contato">Contacta-nos</a>
+  <a href="#promoção">Promoção</a>
+  <a href="#mostrar-localizacao">Localização</a>
+  <a href="#competição">Competição</a>
+</nav>
+
+ <section id="cardapio" class="produtos">
+  <div class="produto">
+    <img src="burger2.png.jpg" alt="Hambúrguer Simples">
+    <h3>Hambúrguer Simples</h3>
+    <p class="preco">2.500 Kz</p>
+    <a class="btn" href="https://wa.me/244923000000?text=Quero+comprar+Hambúrguer+Simples 2.500 kz">Comprar</a>
+  </div>
+
+  <div class="produto">
+    <img src="burger1.png.jpg" alt="Hambúrguer Composto">
+    <h3>Hambúrguer Composto</h3>
+    <p class="preco">3.000 Kz</p>
+    <a class="btn" href="https://wa.me/244923000000?text=Quero+comprar+Hambúrguer+Composto 3.000 kz"_blank">Comprar</a>
+  </div>
+
+  <div class="produto">
+    <img src="Churrasco.png.jpg" alt="Churrasco">
+    <h3>Churrasco</h3>
+    <p class="preco">2.500 Kz</p>
+    <a class="btn" href="https://wa.me/244923000000?text=Quero+comprar+Churrasco 2.500 kz"_blank">Comprar</a>
+  </div>
+
+  <div class="produto">
+    <img src="Magoga.png.jpg" alt="Magoga">
+    <h3>Magoga</h3>
+    <p class="preco">1.000 Kz</p>
+    <a class="btn" href="https://wa.me/244923000000?text=Quero+comprar+Magoga 1.000 Kz"_blank">Comprar</a>
+  </div>
+
+  <div class="produto">
+    <img src="refrigerantes.png.webp" alt="Refrigerante">
+    <h3>Refrigerante</h3>
+    <p class="preco">350 Kz</p>
+    <a class="btn" href="https://wa.me/244923000000?text=Quero+Comprar+Refrigerante 350 kz"_blank">Comprar</a>
+  </div>
+
+     <div class="produto">
+    <img src="Coca Cola.png.webp" alt="Coca Cola">
+    <h3>Coca Cola</h3>
+    <p class="preco">500 kz</p>
+  <a class="btn" href="https://wa.me/244923000000?text=Quero+comprar+CocaCola 500 kz"_blank>comprar</a>
+    
+  </div>
+</section>
+
+<section id="cadastro" class="cadastro-section">
+  <div class="form-container">
+    <h2>Cadastro</h2>
+    <form action="#" method="post">
+      <input type="text" name="nome" placeholder="Seu nome" required>
+      <input type="email" name="email" placeholder="Seu email" required>
+      <input type="tel" name="telefone" placeholder="Seu telefone">
+      <button type="submit" class="btn">Cadastrar</button>
+    </form>
+  </div>
+</section>
+<section id="mostrar-localizacao" style="padding: 40px; text-align: center;">
+  <h2>Estamos localizados em:</h2>
+  <p><strong>Bairro:</strong>Caponte</p>
+  <p><strong>Rua:</strong>Frente ao banco bic</p>
+<p><strong>Benguela</strong>Lobito</p>
+  <a 
+    href="https://www.google.com/maps/search/?api=1&query=Rua+dasFrentente+LOBITO" 
+    target="_blank" 
+    style="display:inline-block; margin-top:20px; background:#e53935; color:white; padding:10px 20px; text-decoration:none; border-radius:5px;">
+    Ver no Mapa
+  </a>
+</section>
